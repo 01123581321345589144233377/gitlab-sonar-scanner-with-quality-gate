@@ -18,7 +18,7 @@ stages:
 
 sonarqube:
   stage: quality-gate
-  image: dcuenot/gitlab-sonar-scanner:1.0.0
+  image: 01123581321345589144233377/gitlab-sonar-scanner-with-quality-gate:1.0.0
   variables:
       SONAR_URL: https://your.sonarqube.server
       SONAR_LOGIN: "${SONAR_TOKEN}"
