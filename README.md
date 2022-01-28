@@ -1,10 +1,5 @@
 # Gitlab Sonar Scanner & Quality Gate
 
-[![Continuous integration](https://github.com/dcuenot/gitlab-sonar-scanner-with-quality-gate/workflows/Continuous%20integration/badge.svg)](https://github.com/dcuenot/gitlab-sonar-scanner-with-quality-gate/actions?query=workflow%3A%22Continuous+integration%22)
-[![Security audit](https://github.com/dcuenot/gitlab-sonar-scanner-with-quality-gate/workflows/Security%20audit/badge.svg)](https://github.com/dcuenot/gitlab-sonar-scanner-with-quality-gate/actions?query=workflow%3A%22Security+audit%22)
-[![codecov](https://codecov.io/gh/dcuenot/gitlab-sonar-scanner-with-quality-gate/branch/master/graph/badge.svg)](https://codecov.io/gh/dcuenot/gitlab-sonar-scanner-with-quality-gate)
-[![Docker pull](https://img.shields.io/docker/pulls/dcuenot/gitlab-sonar-scanner)](https://hub.docker.com/repository/docker/dcuenot/gitlab-sonar-scanner)
-
 Work inspired by [ciricihq/gitlab-sonar-scanner](https://github.com/ciricihq/gitlab-sonar-scanner)
 
 Using it in your gitlab projects
@@ -18,7 +13,7 @@ stages:
 
 sonarqube:
   stage: quality-gate
-  image: dcuenot/gitlab-sonar-scanner:1.0.0
+  image: 01123581321345589144233377/gitlab-sonar-scanner:1.1.1
   variables:
       SONAR_URL: https://your.sonarqube.server
       SONAR_LOGIN: "${SONAR_TOKEN}"
@@ -52,7 +47,7 @@ stages:
 
 sonarqube:
   stage: quality-gate
-  image: dcuenot/gitlab-sonar-scanner:1.0.0
+  image: 01123581321345589144233377/gitlab-sonar-scanner:1.1.1
   variables:
       SONAR_URL: https://your.sonarqube.server
       SONAR_LOGIN: "${SONAR_TOKEN}"
