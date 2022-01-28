@@ -13,7 +13,7 @@ stages:
 
 sonarqube:
   stage: quality-gate
-  image: 01123581321345589144233377/gitlab-sonar-scanner:1.1.1
+  image: 01123581321345589144233377/gitlab-sonar-scanner:1.1.2
   variables:
       SONAR_URL: https://your.sonarqube.server
       SONAR_LOGIN: "${SONAR_TOKEN}"
@@ -47,7 +47,7 @@ stages:
 
 sonarqube:
   stage: quality-gate
-  image: 01123581321345589144233377/gitlab-sonar-scanner:1.1.1
+  image: 01123581321345589144233377/gitlab-sonar-scanner:1.1.2
   variables:
       SONAR_URL: https://your.sonarqube.server
       SONAR_LOGIN: "${SONAR_TOKEN}"
